@@ -6,5 +6,5 @@ $email = $_POST["email"];
 $msg = $_POST["message"];
 
 
-mail("otmanheddouchai@example.com",$subject,$msg);
+mail("otmanheddouchai@gmail.com",$subject,$msg);
 ?>
