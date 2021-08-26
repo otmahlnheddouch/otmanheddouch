@@ -7,4 +7,5 @@ $msg = $_POST["message"];
 
 
 mail("otmanheddouchai@gmail.com",$subject,$msg);
+header("Location: home.html")
 ?>
