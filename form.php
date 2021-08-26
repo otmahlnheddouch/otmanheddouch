@@ -4,5 +4,5 @@ $subject = 'Testing PHP Mail';
 $message = 'This mail is sent using the PHP mail function';
 $headers = 'From: ';
 mail($to_email,$subject,$message,$headers);
-echo("send")
+header("home.html")
 ?>
