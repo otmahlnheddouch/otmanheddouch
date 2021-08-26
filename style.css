@@ -854,11 +854,11 @@ p {
     background: #0c1218;
     border-radius: 10px;
     }
-.right form .button-area  {
+.right form button {
 	align-items: center;
 	padding-bottom: 20px;
 }
-.right form .button-area button {
+.right form  button {
     margin-top: 10px;
     color: #fff;
     display: block;
@@ -869,6 +869,7 @@ p {
     font-size: 18px;
     font-weight: 500;
     border-radius: 6px;
+	text-align: center;
     cursor: pointer;
     flex-wrap: nowrap;
     background: var(--primary-color);
@@ -876,7 +877,7 @@ p {
     transition: all 1s ease ;
 	text-align: center;
 }
-.right form .button-area button:hover {
+.right form button:hover {
     background: none;
     color:var(--primary-color);
 }
