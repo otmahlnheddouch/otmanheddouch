@@ -7,7 +7,7 @@ $message= $_POST['subject'];
 $to = "otmanheddouchai@gmail.com";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
-$headers = "From: noreply@otmanheddouch.herokuapp.com."\r\n";
+$headers = "From: noreply@otmanheddouch.herokuapp.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
