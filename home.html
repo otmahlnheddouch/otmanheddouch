@@ -428,15 +428,13 @@
                   </div>
                 </div>
                 <div class="right">
-                    <form action="mail.php" method="post">
-                            <input type="text" placeholder="Name..." name="name" required>
-                          <input type="email" placeholder="Email..." name="email" required>
-
-                            <input type="text" name="subject" id="" placeholder="Subject...." required>
-                          <textarea type="text" id="message" name="message" width="100%" placeholder="Message" required></textarea>
-                            <button type="submit">Send message</button>
-                    </form>
-                    
+                   
+                    <form action="form.php" method="post">
+                        <input type="text"  name="name" placeholder="Your name.." class="input" required>
+                        <input type="email"  name="email" placeholder="Your email.."class="input" required>
+                        <textarea  name="message" placeholder="Message.." style="height:200px" required></textarea>
+                        <input type="submit" value="Submit" class="button">
+                      </form>
                 </div>
               </div>
             </div>

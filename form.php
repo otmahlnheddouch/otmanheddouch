@@ -1,19 +1,17 @@
-
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+$subject = $_POST["subject"];
+$name = $_POST["name"];
+$email = $_POST["email"];
+$msg = $_POST["message"];
+$emial_body = "User name:$name.\n".
+  "User  Email:$email.\n".
+  "Subject : $subject.\n".
+  "Message: $msg.\n";
+$email_from = "portfoliotman@gmail.com";
+$header = "From: $email_from \r\n";
+$header .= "Reply-To:$email \r\n";
 
-$email_from = 'info@otmanheddouche.herokuapp.com';
-$email_subject = 'New Form Submission';
-$email_body = "User Name :$name./n".
-            "User Email :$visitor_email./n".
-            "Subject :$subject./n".
-            "User Message :$message./n";
-$to = 'otmanheddouchai@gmail.com';
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-mail($to,$email_subject,$email_body,$headers);
-header("Location: home.html");
+
+mail("otmanheddouchai@gmail.com","New form Submission",$emial_body,$header);
+header("Location: home.html")
 ?>
