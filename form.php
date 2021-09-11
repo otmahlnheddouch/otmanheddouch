@@ -9,4 +9,5 @@ mail(
   string $subject,
   string $message,
 ): bool
+header("Location:home.html");
 ?>
